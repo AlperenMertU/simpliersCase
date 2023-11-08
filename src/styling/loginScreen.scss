@@ -1,0 +1,61 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px; /* Yükseklikle birlikte üst boşluğu ayarlar */
+}
+
+form {
+    border-radius: 15px;
+    background-color: rgb(138, 165, 199);
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10rem;
+       
+        h3 {
+            font-size: 2.7rem;
+            margin: 0;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .inputs {
+        position: absolute;
+        padding-bottom: 10px;
+      
+       .mail{
+        padding-top: 20px;
+       }
+      
+    }
+
+    .loginSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .images {
+            padding-top:1rem;
+            cursor: pointer;
+        }
+        Button{
+            margin-top:1rem;
+
+        }
+        p {
+            padding-top: 10px;
+            margin: 0px;
+        }
+    }
+}

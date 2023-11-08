@@ -1,0 +1,55 @@
+@charset "UTF-8";
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px; /* Yükseklikle birlikte üst boşluğu ayarlar */
+}
+
+form {
+  border-radius: 15px;
+  background-color: rgb(138, 165, 199);
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+form .logo h3 {
+  font-size: 2.7rem;
+  margin: 0;
+}
+form .logo p {
+  padding: 0;
+  margin: 0;
+}
+form .inputs {
+  position: absolute;
+  padding-bottom: 10px;
+}
+form .inputs .mail {
+  padding-top: 20px;
+}
+form .loginSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .loginSection .images {
+  padding-top: 1rem;
+  cursor: pointer;
+}
+form .loginSection Button {
+  margin-top: 1rem;
+}
+form .loginSection p {
+  padding-top: 10px;
+  margin: 0px;
+}/*# sourceMappingURL=loginScreen.css.map */

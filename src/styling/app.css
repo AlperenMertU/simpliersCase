@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+nav .logo {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+nav .logo h3 {
+  color: red;
+  margin: 0;
+  font-size: 55px;
+}
+nav .logo .about {
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+nav .logo .about p {
+  margin: 0;
+  font-size: 1rem;
+}
+nav .darkmode p {
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=app.css.map */
