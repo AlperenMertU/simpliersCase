@@ -2,7 +2,7 @@ import React from 'react'
 import "./styling/app.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginScreen from "./components/LoginScreen";
-import Home from "./components/Home";
+import ChatScreen from "./components/ChatScreen";
 import sunIcon from "./assets/sun.png";
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
         </div>
 
         <div className="darkmode">
-        <img style={{ height: 35 }} src={sunIcon} alt="Logo" />
+          <img style={{ height: 35 }} src={sunIcon} alt="Logo" />
         </div>
       </nav>
 
@@ -32,7 +32,7 @@ export default function App() {
 
           <Route path="/" element={<LoginScreen />}>
           </Route>
-          <Route path="/home" element={<Home />}>
+          <Route path="/chat" element={<ChatScreen />}>
           </Route>
 
         </Routes>
