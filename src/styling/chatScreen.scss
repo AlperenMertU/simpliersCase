@@ -2,71 +2,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px; /* padding değerini düzelttim */
+    padding-top: 50px;
 }
 
 .window {
     background-image: url("../assets/backgroundimage.jpg");
-    border: 1px solid #ccc;
-    width: 70rem;
-    height: 35rem;
+    width: 900px;
+    height: 500px;
 
-    .chatlist {
-        background-color: rgb(51, 51, 51);
-        position: absolute;
-        width: 15%;
-        height: 30.6rem;
-        border-right: 1px solid #ccc;
-       
-
-        ul {
-            color: white;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            height: 100px;
-
-            li {
-                text-align: center;
-                justify-content: center;
-                height: 50px;
-                cursor: pointer;
-                width: 100%;
-                &:hover {
-                    color: #e9cfcf;
-                }
-                &:hover {
-                    background-color: #000000;
-                }
-            }
-        }
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 4fr);
 
     .userprofile {
-        background-color: rgb(140, 140, 140);
-        flex: 1;
-        text-align: center;
-        padding: 10px;
-        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
         height: 50px;
-
-        img {
-            padding-top: 15px;
-        }
+        background-color: rgb(140, 140, 140);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .chatlist {
+        background-color: rgb(51, 51, 51);
+        grid-row-start: 2;
+        grid-row-end: 13;
     }
 
     .chatinput {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-end: 13;
+        padding-bottom: 10px;
+        outline: 0;
         display: flex;
-        justify-content: flex-end;
-        padding-top: 440px;
- 
+        align-items: center;
         input {
-            margin-right: 10px;
-            justify-content: flex-end;
-            width: 45%;
-            height: 50px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 20px;
+            margin-left: 8rem;
+            background-color: gray;
+            outline: none;
+            width: 70%;
+            height: 90%;
+        }
+    }
+
+    .messagesWindow {
+        overflow: auto;
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        grid-row-start: 2;
+        grid-row-end: 12;
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-height: 733px) {
+    .window {
+        background-image: url("../assets/backgroundimage.jpg");
+        width: 100%;
+        height: 35rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container {
+        padding-top: 10px; /* padding değerini düzelttim */
+    }
+
+    .chatlist {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .chatinput {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 5;
+        margin-left: -95px;
+
+        input {
+            margin: 0;
+            width: 100%;
         }
     }
 }

@@ -1,3 +1,7 @@
+body {
+  color: white;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -15,6 +19,7 @@ nav .logo h3 {
   font-size: 55px;
 }
 nav .logo .about {
+  color: rgb(0, 0, 0);
   font-weight: bold;
   display: flex;
   gap: 10px;

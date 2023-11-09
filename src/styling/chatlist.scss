@@ -1,0 +1,16 @@
+ul {
+    cursor: pointer;
+    list-style: none;
+    justify-content:space-between;
+    padding: 0;
+    li {
+        padding: 15px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        &:hover{
+            background-color: rgba(96, 96, 96, 0.342);
+        }
+    }
+   
+}

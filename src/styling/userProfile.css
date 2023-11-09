@@ -1,0 +1,16 @@
+.profileInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.profileInfo p {
+  margin-right: 5px;
+}
+
+@media (max-height: 733px) {
+  .profileInfo {
+    margin-left: 80%;
+  }
+}/*# sourceMappingURL=userProfile.css.map */

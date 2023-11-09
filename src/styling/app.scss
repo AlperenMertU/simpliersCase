@@ -1,5 +1,7 @@
 
- 
+ body{
+color: white;
+ }
  nav {
     display: flex;
     justify-content: space-between;
@@ -15,6 +17,7 @@
             font-size: 55px;
         }
         .about {
+            color: rgb(0, 0, 0);
             font-weight: bold;
             display: flex;
             gap: 10px;

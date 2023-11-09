@@ -1,0 +1,59 @@
+.messageBubble {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.messageBubble .avatar {
+  margin-top: 10px;
+  display: block;
+  text-align: end;
+}
+.messageBubble .avatar p {
+  margin: 0;
+  opacity: 0.5;
+  margin-left: 0px;
+}
+.messageBubble .messageAbout {
+  display: flex;
+  padding-left: 20px;
+}
+.messageBubble .messageAbout p {
+  border-radius: 0px 10px 10px 10px;
+  padding: 10px;
+  background-color: rgb(85, 166, 253);
+}
+
+.myMessageBubble {
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.myMessageBubble .avatar {
+  margin-top: 10px;
+  display: block;
+  text-align: end;
+}
+.myMessageBubble .avatar p {
+  margin: 0;
+  opacity: 0.5;
+  margin-left: 0px;
+}
+.myMessageBubble .avatar img {
+  width: 40px;
+  height: 35px;
+  border-radius: 20px;
+}
+.myMessageBubble .messageAbout {
+  display: flex;
+  padding-left: 20px;
+}
+.myMessageBubble .messageAbout p {
+  border-radius: 20px 10px 20px 20px;
+  padding: 10px;
+  background-color: rgb(85, 166, 253);
+}/*# sourceMappingURL=messages.css.map */

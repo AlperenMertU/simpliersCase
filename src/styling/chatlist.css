@@ -1,0 +1,15 @@
+ul {
+  cursor: pointer;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+ul li {
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+ul li:hover {
+  background-color: rgba(96, 96, 96, 0.342);
+}/*# sourceMappingURL=chatlist.css.map */
