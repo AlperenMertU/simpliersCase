@@ -1,8 +1,9 @@
+body {
+    color: white;
+    background-color: rgba(210, 210, 210, 0.547);
+}
 
- body{
-color: white;
- }
- nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,18 +28,11 @@ color: white;
                 font-size: 1rem;
             }
         }
-        
-
     }
-    
-  
-   
-   
-    
+
     .darkmode p {
         margin: 0;
         font-size: 1rem;
         cursor: pointer;
     }
-    
 }

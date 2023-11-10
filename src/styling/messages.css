@@ -6,9 +6,11 @@
   margin: 0;
 }
 .messageBubble .avatar {
+  text-align: center;
   margin-top: 10px;
   display: block;
-  text-align: end;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .messageBubble .avatar p {
   margin: 0;
@@ -17,10 +19,10 @@
 }
 .messageBubble .messageAbout {
   display: flex;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 .messageBubble .messageAbout p {
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 15px;
   padding: 10px;
   background-color: rgb(85, 166, 253);
 }
@@ -34,9 +36,12 @@
   margin: 0;
 }
 .myMessageBubble .avatar {
+  padding: 5px;
   margin-top: 10px;
   display: block;
-  text-align: end;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 10px;
 }
 .myMessageBubble .avatar p {
   margin: 0;
@@ -53,7 +58,7 @@
   padding-left: 20px;
 }
 .myMessageBubble .messageAbout p {
-  border-radius: 20px 10px 20px 20px;
+  border-radius: 10px 10px 10px 10px;
   padding: 10px;
   background-color: rgb(85, 166, 253);
 }/*# sourceMappingURL=messages.css.map */

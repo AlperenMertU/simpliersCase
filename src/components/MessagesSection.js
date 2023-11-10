@@ -2,15 +2,26 @@ import React from 'react'
 import FriendsMessage from './minComponent/FriendsMessage'
 import MyMessages from './minComponent/MyMessages'
 
-function MessagesSection() {
+function MessagesSection({ messages}) {
   return (
+
     <div>
 
       <FriendsMessage />
-      <MyMessages />
-      <MyMessages />
-      
+
+
+      <div>
+        {messages.map((message, index) => (
+          message.sender === 'me' ? (
+            <MyMessages key={index} text={message.text} />
+          ) : (
+            <FriendsMessage key={index} text={message.text} />
+          )
+        ))}
+      </div>
+
     </div>
+
   )
 }
 

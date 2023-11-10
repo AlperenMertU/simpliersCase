@@ -14,3 +14,17 @@ ul {
     }
    
 }
+
+
+
+@media (max-height: 733px) {
+    ul{
+        margin: 0px;
+
+         li{
+
+            padding-right: 10px;
+            padding: 10px;
+         }
+    }
+}

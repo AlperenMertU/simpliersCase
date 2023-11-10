@@ -1,10 +1,16 @@
 import React from 'react'
 import picture from "../../assets/profilepicture.png";
-import picture2 from "../../assets/cc.jpeg";
+import picture2 from "../../assets/myProfilePicture.jpeg";
+
+import { useSelector } from 'react-redux';
+import { selectUserName } from '../minComponent/UserSlice';
 
 import "../../styling/messages.css";
 
 function FriendsMessage() {
+    const fullName = useSelector(selectUserName);
+    const firstName = fullName.split(' ')[0]
+    
     return (
 
         <div className='dummyMessge'>
@@ -12,7 +18,7 @@ function FriendsMessage() {
 
                 <div className="avatar">
                     <img style={{ width: 40, height: 30 }} src={picture} alt="Logo" />
-                    <p>az önce</p>
+                    <p>Ahmet</p>
                 </div>
 
                 <div className="messageAbout">
@@ -25,8 +31,8 @@ function FriendsMessage() {
             <div className='messageBubble' style={{ flexDirection: "row-reverse" }}>
 
                 <div className="avatar">
-                    <img style={{ width: 40, height: 35, borderRadius:50 }} src={picture2} alt="Logo" />
-                    <p>az önce</p>
+                    <img style={{ width: 32, height: 30, borderRadius:50 }} src={picture2} alt="Logo" />
+                    <p>{firstName}</p>
                 </div>
 
                 <div className="messageAbout">
@@ -40,7 +46,7 @@ function FriendsMessage() {
 
                 <div className="avatar">
                     <img style={{ width: 40, height: 30 }} src={picture} alt="Logo" />
-                    <p>az önce</p>
+                    <p>Ahmet</p>
                 </div>
 
                 <div className="messageAbout">
@@ -53,8 +59,8 @@ function FriendsMessage() {
             <div className='messageBubble' style={{ flexDirection: "row-reverse" }}>
 
                 <div className="avatar">
-                    <img style={{ width: 40, height: 35, borderRadius:50 }} src={picture2} alt="Logo" />
-                    <p>az önce</p>
+                    <img  style={{ width: 32, height: 30, borderRadius:50 }} src={picture2} alt="Logo" />
+                    <p>{firstName}</p>
                 </div>
 
                 <div className="messageAbout">

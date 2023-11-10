@@ -1,1 +1,1 @@
-{"version":3,"sources":["chatlist.scss","chatlist.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,gBAAA;EACA,8BAAA;EACA,UAAA;ACCJ;ADAI;EACI,aAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;ACER;ADDQ;EACI,yCAAA;ACGZ","file":"chatlist.css"}
+{"version":3,"sources":["chatlist.scss","chatlist.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,gBAAA;EACA,8BAAA;EACA,UAAA;ACCJ;ADAI;EACI,aAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;ACER;ADDQ;EACI,yCAAA;ACGZ;;ADKA;EACI;IACI,WAAA;ECFN;EDIO;IAEG,mBAAA;IACA,aAAA;ECHV;AACF","file":"chatlist.css"}

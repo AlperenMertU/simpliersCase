@@ -6,7 +6,7 @@
 }
 
 .window {
-    background-image: url("../assets/backgroundimage.jpg");
+    background-image: url("/src/assets/backgroundimage.jpg");
     width: 900px;
     height: 500px;
 
@@ -45,11 +45,14 @@
             outline: none;
             width: 70%;
             height: 90%;
+            color: white;
+            font-size: 15px;
         }
     }
 
     .messagesWindow {
         overflow: auto;
+
         grid-column-start: 2;
         grid-column-end: 5;
 
@@ -58,6 +61,16 @@
 
         width: 100%;
         height: 100%;
+
+        &::-webkit-scrollbar {
+            width: 1px;
+            background-color: #000;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -65,7 +78,7 @@
     .window {
         background-image: url("../assets/backgroundimage.jpg");
         width: 100%;
-        height: 35rem;
+        height: 34.4rem;
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -74,19 +87,22 @@
     }
 
     .chatlist {
+        font-size: 15px;
+        
         grid-row-start: 1;
         grid-row-end: 3;
     }
     .chatinput {
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 10;
+        grid-row-start: 12;
         grid-row-end: 5;
         margin-left: -95px;
 
         input {
             margin: 0;
             width: 100%;
+            height: 10px;
         }
     }
 }
