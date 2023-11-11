@@ -23,7 +23,7 @@
  </p>
 
 ### Componentler
-<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/a1f300ba-58d3-4671-a0e9-30cbb9308508" alt="components" width="200" />
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/f745e321-572a-4426-ab89-91cf5d389d7b" alt="components" width="200" />
 
 <p align="left">
  Ekranı kapsayan bileşenlerim "components" dizininin altında daha küçük işlevli bileşenler 
