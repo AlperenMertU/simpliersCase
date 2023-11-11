@@ -2,67 +2,75 @@
 
 ## Kullanılan Diller ve Araçlar
 
-In the project directory, you can run:
+<p align="center">
+<a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript" /></a>
+<a ><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
+<a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="36" height="36" alt="Sass" /></a>
+<a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
+<a><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
+</p>
+<p align="center">
+    -React Router
+    -Material UI
+</p>
 
-### `npm start`
+## Proje Hakkında
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="left">
+  Hazırladığım projede hiçbir hazır template veya tasarım amaçlı kütüphane kullanılmadan tamamen farklı ve özgün konseptle hem webe hem mobile uygun bir 
+  şekilde tasarlanmıştır. Responsive bir tasarım için Scss tarafında "Css Grid" kullandım ve tasarıma bunu üzeridnen gittim. Genel olarak 2 farklı sayfadan oluşturğu için "LoginScreen.js" ve "ChatScreen.js",
+  Daha kolay veri iletimi için Redux Toolkit kullandım.
+ </p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Componentler
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/a1f300ba-58d3-4671-a0e9-30cbb9308508" alt="components" width="200" />
 
-### `npm test`
+<p align="left">
+ Ekranı kapsayan bileşenlerim "components" dizininin altında daha küçük işlevli bileşenler 
+ "minComponent" içinde. "redux" dizini içersinde ReduxTool kit elemanı var.
+</p>
+<hr>
+<h3>Üstten alta doğru</h2>
+<p align="left">
+ <b>ChatList.js</b> ; bu bileşen aslında sidebar yerine de geçiyor çünkü mesaj uygulamamızın yan tarafında diğer mesajlaştığımız kimeseleri görmemizi sağlıyor. İçersinde örnek olması açısından dizi içinde 3 kişi ekldim 
+</p>
+<p align="left">
+ <b>FriendsMessage.js</b> ; bu bileşen hem karşıdan hem bizden gelen 4 mesajlık dummy mesajları içeriyor. Benim dummy mesajlarım da bunu içinde. 
+</p>
+<p align="left">
+ <b>MyMessages.js</b> ; bu bilşen inputumuzdan gelen texti işleyim mesaj balonu şekline sokuyor. Ve kendi mesajmız gönderilmeye hazır hale getiriyor
+</p>
+<p align="left">
+ <b>UserProfile.js</b> ; bu bilşen aslında navbar yerine de geçiyor. bize Loginde girilien kullanıcımız bilgilerini gösteriyor.
+</p>
+<p align="left">
+ <b>UserSlice.js</b> ; bu bilşen Redux ile kullanılan actionları içeriyor. Bir başka komponentten "kullanıcı adı" ve "ChatList.js" deki kullanıcı verilerini almak istersem bunu kullanıyorum.
+</p>
+<p align="left">
+ <b>store.js</b> ; bu bilşen Redux ile kullanılan UserSlice.js reducerını kullanmamı sağlıyor.
+</p>
+<p align="left">
+ <b>ChatSCreen.js</b> ; genel olarak chat penceresini ve içersindeki komponentleri kapsayan bileşenimiz. css grid kullanarak tasrımı yapıldı. İnput direkt olarak bu bileşenin içersinde.
+</p>
+<p align="left">
+ <b>LoginScreen.js</b> ; React Router ile Ekran geçişini sağlar. Ad Soyad Bilgilerini alır. Redux ile UserProfile.js, MyMessages.js ve FriendsMessage.js sadece Ad verisini iletir
+</p>
+<p align="left">
+ <b>MessagesSection.js</b> ; Kullanıcıdan gelen mesajı "MyMessages.js" e prop geçip ekrana yansıtır. "FriendsMessage.js" içersindeki 4 adetlik dummy mesaj da bunun içersinde ekranda gösterilir
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Görseller 
+<hr>
 
-### `npm run build`
+#### LoginScreen
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/dacf9eaf-2eef-461c-920a-d08a931c0e04" alt="loginscreen" width="300" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### ChatScreen
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/ac700a29-c4d6-4103-8785-8e33491aaf0f" alt="chatscreen" width="300" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Mobile Login
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/dfe45af2-173d-4f8a-8d7b-de7ea3c01c37" alt="mobilelogin" width="200" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Mobile Chat
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/eb30433a-4dc9-4af2-8920-c71c9c4fa1f6" alt="mobileChat" width="200" />
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
