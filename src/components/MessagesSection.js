@@ -12,11 +12,9 @@ function MessagesSection({ messages}) {
 
       <div>
         {messages.map((message, index) => (
-          message.sender === 'me' ? (
+         
             <MyMessages key={index} text={message.text} />
-          ) : (
-            <FriendsMessage key={index} text={message.text} />
-          )
+       
         ))}
       </div>
 

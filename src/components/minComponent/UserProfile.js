@@ -7,13 +7,16 @@ import { selectUserName } from '../minComponent/UserSlice';
 
 const UserProfile = () => {
     const fullName = useSelector(selectUserName);
-    const firstName = fullName.split(' ')[0]
 
+    const kelimeler = fullName.split(' ');
+    const ilkIkiKelime = kelimeler.slice(0, 2);
+ 
+    console.log('İlk iki kelime:', ilkIkiKelime.join(' '));
     return (
         <nav>
 
             <div className="profileInfo">
-                <p>{firstName}</p>
+                <p>{ilkIkiKelime.join(' ')}</p>
                 <img style={{ height: 30, borderRadius:20 }} src={Profilepic} alt="Logo" />
 
 

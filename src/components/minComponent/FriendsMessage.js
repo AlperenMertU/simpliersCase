@@ -9,8 +9,10 @@ import "../../styling/messages.css";
 
 function FriendsMessage() {
     const fullName = useSelector(selectUserName);
-    const firstName = fullName.split(' ')[0]
-    
+    const kelimeler = fullName.split(' ');
+    const ilkIkiKelime = kelimeler.slice(0, 2);
+ 
+ 
     return (
 
         <div className='dummyMessge'>
@@ -32,7 +34,7 @@ function FriendsMessage() {
 
                 <div className="avatar">
                     <img style={{ width: 32, height: 30, borderRadius:50 }} src={picture2} alt="Logo" />
-                    <p>{firstName}</p>
+                    <p>{ilkIkiKelime.join(' ')}</p>
                 </div>
 
                 <div className="messageAbout">
@@ -60,7 +62,7 @@ function FriendsMessage() {
 
                 <div className="avatar">
                     <img  style={{ width: 32, height: 30, borderRadius:50 }} src={picture2} alt="Logo" />
-                    <p>{firstName}</p>
+                    <p>{ilkIkiKelime.join(' ')}</p>
                 </div>
 
                 <div className="messageAbout">

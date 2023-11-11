@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# Case Study - Login Formu ile Kullanıcı Dostu Chat Ekranı
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Kullanılan Diller ve Araçlar
 
 In the project directory, you can run:
 

@@ -7,19 +7,16 @@ import MessagesSection from './MessagesSection';
 
 import { useSelector } from 'react-redux';
 
-import { selectUserName } from '../components/minComponent/UserSlice';
 import { selectSelectedUser } from '../components/minComponent/UserSlice';
 
 const ChatScreen = () => {
-    let ad = useSelector(selectSelectedUser);
-    const name = useSelector(selectUserName);
+    let selectedChatList = useSelector(selectSelectedUser);
 
 
 
     const [inputValue, setInputValue] = useState('');
     const [messages, setMessages] = useState([]);
 
-    console.log(name);
 
     const handleInputChange = (event) => {
         const value = event.target.value;
@@ -30,7 +27,7 @@ const ChatScreen = () => {
 
     const handleSubmit = () => {
         if (inputValue.trim() !== '') {
-            setMessages([...messages, { text: inputValue, sender: 'me' }]);
+            setMessages([...messages, { text: inputValue}]);
             setInputValue('');
         }
     };
@@ -51,7 +48,7 @@ const ChatScreen = () => {
                 </div>
 
 
-                {ad === "Ahmet" ? (
+                {selectedChatList === "Ahmet" ? (
 
                     <div className="messagesWindow">
                         <MessagesSection messages={messages} />
@@ -60,7 +57,7 @@ const ChatScreen = () => {
                 ) : null
                 }
 
-                {ad === "Ahmet" ? (
+                {selectedChatList === "Ahmet" ? (
                     <div className="chatinput">
                         <input onChange={handleInputChange} type="text" value={inputValue} />
                         <img onClick={handleSubmit} style={{ height: 25, marginLeft: 15, background: "white", padding: 5, borderRadius: 15, cursor: "pointer", }}
