@@ -63,14 +63,14 @@
 <hr>
 
 #### LoginScreen
-<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/dacf9eaf-2eef-461c-920a-d08a931c0e04" alt="loginscreen" width="300" />
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/07b986fe-a600-49e3-bc05-e4bb6899a5d2" alt="loginscreen" width="300" />
 
 #### ChatScreen
-<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/ac700a29-c4d6-4103-8785-8e33491aaf0f" alt="chatscreen" width="300" />
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/319761c6-7736-47da-89ad-9fbce9df3917" alt="chatscreen" width="300" />
 
 #### Mobile Login
-<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/dfe45af2-173d-4f8a-8d7b-de7ea3c01c37" alt="mobilelogin" width="200" />
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/eb9259fb-ddcb-425f-883a-2398f779aa67" alt="mobilelogin" width="200" />
 
 #### Mobile Chat
-<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/eb30433a-4dc9-4af2-8920-c71c9c4fa1f6" alt="mobileChat" width="200" />
+<img src="https://github.com/AlperenMertU/simpliersCase/assets/89020497/ce4791a0-f5c6-4a5f-886d-22f85e991a4d" alt="mobileChat" width="200" />
 
